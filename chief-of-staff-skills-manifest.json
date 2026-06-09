@@ -1,0 +1,20 @@
+{
+  "skills": [
+    {
+      "identifier": "casim/ai-chief-of-staff-starter/.claude/skills/plan-my-day",
+      "category": "chief-of-staff"
+    },
+    {
+      "identifier": "casim/ai-chief-of-staff-starter/.claude/skills/weekly-review",
+      "category": "chief-of-staff"
+    },
+    {
+      "identifier": "casim/ai-chief-of-staff-starter/.claude/skills/review-against-concept",
+      "category": "chief-of-staff"
+    },
+    {
+      "identifier": "casim/ai-chief-of-staff-starter/.claude/skills/sync",
+      "category": "chief-of-staff"
+    }
+  ]
+}
