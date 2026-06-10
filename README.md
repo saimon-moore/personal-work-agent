@@ -1,4 +1,4 @@
-# local-hermes
+# Personal Work Agent
 
 Standalone helper scripts for a local-only Hermes install on Linux and macOS.
 
