@@ -18,28 +18,21 @@ Standalone helper scripts for a local-only Hermes install on Linux and macOS.
 - `./skills-manifest.json`
 - `./chief-of-staff-skills-manifest.json`
 
-## Defaults
-
-- Hermes home: `$HOME/.hermes`
-- Wrapper: `$HOME/.local/bin/hermes`
-- Sandbox image: `local-hermes-sandbox:node-lts`
-- Node strategy: `auto`
-
-## Node strategy
-
-`auto` uses this precedence:
-
-1. `mise exec -C "$HOME" node@lts -- ...` when `mise` exists
-2. Hermes-managed Node at `$HERMES_HOME/node/bin/node` when present
-3. ambient system environment otherwise
-
-You can override with:
-
-- `--node-strategy auto`
-- `--node-strategy mise`
-- `--node-strategy ambient`
-
 ## Install
+
+Hosted one-line install commands:
+
+### Bare agent install
+```bash
+curl -fsSL https://raw.githubusercontent.com/saimon-moore/personal-work-agent/main/install.sh | bash -s -- --skills-manifest https://raw.githubusercontent.com/saimon-moore/personal-work-agent/main/skills-manifest.json
+```
+
+### AI Chief of staff agent install
+```bash
+curl -fsSL https://raw.githubusercontent.com/saimon-moore/personal-work-agent/main/install.sh | bash -s -- --skills-manifest https://raw.githubusercontent.com/saimon-moore/personal-work-agent/main/skills-manifest.json --with-chief-of-staff
+```
+
+### Local Install
 
 ```bash
 ./install.sh
@@ -47,22 +40,19 @@ You can override with:
 
 The local installer keeps Hermes bundled built-in skills and then applies the curated custom skills listed in [`skills-manifest.json`](skills-manifest.json).
 
-Hosted one-line install commands:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/saimon-moore/personal-work-agent/main/install.sh | bash -s -- --skills-manifest https://raw.githubusercontent.com/saimon-moore/personal-work-agent/main/skills-manifest.json
-```
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/saimon-moore/personal-work-agent/main/install.sh | bash -s -- --skills-manifest https://raw.githubusercontent.com/saimon-moore/personal-work-agent/main/skills-manifest.json --with-chief-of-staff
-```
-
 Advanced options:
 
 - `--skip-custom-skills`
 - `--skills-manifest PATH_OR_URL`
 - `--with-chief-of-staff`
 - `--chief-of-staff-home PATH`
+
+## Defaults
+
+- Hermes home: `$HOME/.hermes`
+- Wrapper: `$HOME/.local/bin/hermes`
+- Sandbox image: `local-hermes-sandbox:node-lts`
+- Node strategy: `auto`
 
 ## AI Chief Of Staff
 
@@ -195,3 +185,17 @@ It currently bundles:
 - `weekly-review`
 - `review-against-concept`
 - `sync`
+
+## Node strategy
+
+`auto` uses this precedence:
+
+1. `mise exec -C "$HOME" node@lts -- ...` when `mise` exists
+2. Hermes-managed Node at `$HERMES_HOME/node/bin/node` when present
+3. ambient system environment otherwise
+
+You can override with:
+
+- `--node-strategy auto`
+- `--node-strategy mise`
+- `--node-strategy ambient`
