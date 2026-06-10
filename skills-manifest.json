@@ -4,6 +4,36 @@
       "url": "https://github.com/saimon-moore/skills/tree/main/msteams",
       "name": "msteams",
       "category": "collaboration/tools"
+    },
+    {
+      "url": "https://github.com/saimon-moore/skills/tree/main/atlassian-cli",
+      "name": "atlassian-cli",
+      "category": "collaboration/tools"
+    },
+    {
+      "url": "https://github.com/saimon-moore/skills/tree/main/atlassian-capture-tasks-from-meeting-notes",
+      "name": "atlassian-capture-tasks-from-meeting-notes",
+      "category": "collaboration/tools"
+    },
+    {
+      "url": "https://github.com/saimon-moore/skills/tree/main/atlassian-generate-status-report",
+      "name": "atlassian-generate-status-report",
+      "category": "collaboration/tools"
+    },
+    {
+      "url": "https://github.com/saimon-moore/skills/tree/main/atlassian-search-company-knowledge",
+      "name": "atlassian-search-company-knowledge",
+      "category": "collaboration/tools"
+    },
+    {
+      "url": "https://github.com/saimon-moore/skills/tree/main/atlassian-spec-to-backlog",
+      "name": "atlassian-spec-to-backlog",
+      "category": "collaboration/tools"
+    },
+    {
+      "url": "https://github.com/saimon-moore/skills/tree/main/atlassian-triage-issue",
+      "name": "atlassian-triage-issue",
+      "category": "collaboration/tools"
     }
   ]
 }
